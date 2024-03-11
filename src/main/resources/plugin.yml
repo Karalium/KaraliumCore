@@ -1,0 +1,25 @@
+name: KaraliumCore
+version: '${project.version}'
+main: com.kerix.karalium.core.Main
+api-version: '1.20'
+author: NotKerix
+depend:
+  - MinecraftAPI
+commands:
+  abilitybypass:
+    description: "Enables a ByPass to Ability Cooldowns"
+    permission: karaliumcore.bypass.cooldown
+    permission-message: "§cYou do not have permission to execute this command"
+  karalium:
+    description: "Karalium admin commands"
+    permission: karaliumcore.karalium
+    permission-message: "§cYou do not have permission to execute this command"
+    aliases:
+      - karaliumadmin
+      - karaliuma
+  eco:
+    description: "Economy commands"
+    permission: karaliumcore.economy
+    permission-message: "§cYou do not have permission to execute this command"
+  bal:
+    description: "Gives a player's balance"
